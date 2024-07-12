@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>moojo.</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--navigation section-->
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-content">
+          <div class="logo">moojo.</div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+          <button class="contact-btn">Contact</button>
+        </div>
+      </div>
+    </nav>
+    <!--hero section-->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Your one-stop solution <br />
+            for all things design & development.
+          </h1>
+          <p class="hero-text">
+            Discover amazing features and services that will transform your
+            digital experience. We're here to help you succeed in the
+            ever-changing world of technology.
+          </p>
+          <a href="#" class="hero-button">Get Started</a>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-placeholder">
+            <img
+              src="./images/Mobile Marketing-rafiki.png"
+              alt="illustration"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--services-->
+    <section class="services">
+      <h2 class="services-title">Our Services</h2>
+      <div class="services-container">
+        <div class="services-scroll" id="servicesScroll">
+          <div class="service-card">
+            <div class="service-image">
+              <img src="./images/design.jpg" alt="Designing" />
+            </div>
+            <div class="service-content">
+              <h3 class="service-heading">Designing</h3>
+              <p class="service-text">
+                Beautiful, user-friendly designs tailored to your needs. We
+                ensure every project is crafted with attention to detail, making
+                your brand stand out.
+              </p>
+              <a href="#" class="service-button">Learn More</a>
+            </div>
+          </div>
+          <!--services card-->
+          <div class="service-card">
+            <div class="service-image">
+              <img src="./images/coding.jpg" alt="" srcset="" />
+            </div>
+            <div class="service-content">
+              <h3 class="service-heading">Development</h3>
+              <p class="service-text">
+                Beautiful, user-friendly designs tailored to your needs. We
+                ensure every project is crafted with attention to detail, making
+                your brand stand out.
+              </p>
+              <a href="#" class="service-button">Learn More</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="./images/editing.jpg" alt="" srcset="" />
+            </div>
+            <div class="service-content">
+              <h3 class="service-heading">Editing</h3>
+              <p class="service-text">
+                Beautiful, user-friendly designs tailored to your needs. We
+                ensure every project is crafted with attention to detail, making
+                your brand stand out.
+              </p>
+              <a href="#" class="service-button">Learn More</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="./images/3d.jpg" alt="3d" srcset="" />
+            </div>
+            <div class="service-content">
+              <h3 class="service-heading">3D Modeling</h3>
+              <p class="service-text">
+                Beautiful, user-friendly designs tailored to your needs. We
+                ensure every project is crafted with attention to detail, making
+                your brand stand out.
+              </p>
+              <a href="#" class="service-button">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="scroll-control scroll-left" id="scrollLeft">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAt5JREFUaEO9WVuWqzAMCzubu7LSnd2ddaBAnrYlOznDV8+g2JJfSZgtOZ4tpfRh8SSYhKlet5QYExeGQbL6QriT7adlcnLiNGgea1X590Kpov1C5hLQPYx7EQOcoahHlosCkKOV75lgWf7CGaiNwg7JtbtKepFtZ8Co79nIzUkpEXGVENOjORvXuMjPKJj5C5bpEjCWjTEAlqdINkgKgFWOQxVFgEAsaWLITSMhNrcvdWQGIMWFAEOtcJD5AwE5zD8ppf+NUhhsA3C/ugRo22o9STQMd7zbj8PU6/D0Ptydv2PnF4FDLAMwcg3Fh/xDuhJBVF6kiTWzJO969u/HbnBGvn/+DeVEaJEg/E7sd3BHfhjBf5UB3ECGpqpsGpRJ3pvhp5MGHtCQDXCRj22RhUBXQpA6KqR9S+klXDtL5DsXXo89PjaFZBl65Le0j9PWS30cvqcFIwN8qA7k/knbS7jyX5HXTEENNUAGuzKQTbS27rKJTRtMsU23XEJeK8XmGd2XcO5fvuNae1P1TsupmmvXxJFiqWQVDYt6s7SPJYSkRkSFF2a+XfRaIVirxB4gSPcRCmdi6Bwq9oWhq4mBbXqMwuHTFIj0MZMVwE/Sx2U4E+qo7aLW94yRgUAhXUvCIhiP8hil6o4AFetfEQKhucOcYDBnYGwmvlIVaeFMqKHCAogoN8UKRXYiMj52oVEFGDzEV75vnX05vQ+b502N2EDx1XnhGDWz8dzO3keX35d6JtsYAwVoGcjnH1hFmUT+rFIv4ZfLYqAAcVk3jHkSPNI6vH3L7zblEjDv3i6JcRJqu1j5eyego+hizBSGbVB7a61yZQAeUXDPfRGwr8gB9dgi3c7B6rbp/vcxGnaM9VgGZrTMVKlQArYA34bVyiL7Z4SRC29vUID2OcTlJhB11j5ZQqy5JwlM6niba6ZQzQn6hgCji4yiEib1lQFmrjGY8JyN7Q94jM4EcmZSOdb+Ara9H0HdT635AAAAAElFTkSuQmCC"
+          />
+        </button>
+        <button class="scroll-control scroll-right" id="scrollRight">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAvZJREFUaEO9WWtawzAMS2/GzVZOBjcbfaau7VhymrEffIMmfsmykjKVMpUyvUt5F/4zFbzeXRNvZMzqINc922ffLE30mBPmW9sZs8waETddeWs34Yn2IguKN1UE4qV9gbp4QlNqATBCJoArgVY86agIE8WBSgYUj/8cVpc3aznZdnl/kipVEHF9NDArJ4fPtVCQwMiUPpcA3y25saPsripmVKlDg9xw+yrNtOXlzk0gW7xPrGeLSLbQQIWW2fZBdKsXiYAcapTXr1LKr0WG2ut1dTWlLewIBOLX3Nnum3kh1Wux+r0sWb+LD9nfCcBtC5FFarB2Lu8t+LMoThJjGVMRgCdqXJW1bX6c8NpJPCnW4cgl8QO781TK67xaCDtHEpJLMRKDp5DSmjjDkwO3Yb1cNsa20xGDS+JYGqkbnE1iN2qSqJjAHvYRI3WgBXcIBZ0ETWuHh3ECD8hwBKWSqAYfttMVWB8CucTGI6GU5S5kLP1p3LeFRxJmCl1IpIrSiYD1IQOCKrsnYfsYtlPd4rgYrQN6dO6SvE+Yefnycl4oqQRahfD/bscohLKFQ9hT/TwA8QQkzlUiCJ8LnnHHtlAVMiUuHeBwwYtzTeYN53lmJOYJpb762JwKnjrSO5H26QAW5i14B7GNsCMnNXkjI0C6lthx2TgHpaze2szRgexsafDhJlgiQDjrnZcjcX5HV6daCJD4q0zlx/6fYfpeZr+6WuZqb7XvOi/HCcCxYwLRxI0r3yJD62it1q+/1gQGEqte6hebc3Ys5rA5E6hTsjUu01Cs7fQr2ynm2P60/qwIYL9uC+FtqE62axmhRVa95ykS4/GvtawnpJSXiwMpV88hSrmLFlch+8+YRvm6TSG+JJJw/K5rchNzqWaImaPGaCAZcjaTJcyO5nhSyXe418rRQvbgYIzQ9KuWGqMQWRTDB56rBKyQwW7puip0ZuIEsycgS0uqIKYXClJZgJXy7QUcUNMm64BZD6uAjXQrMTbdQKB7o2/vD1PxIET8gRgEAAAAAElFTkSuQmCC"
+          />
+        </button>
+      </div>
+    </section>
+    <section class="flex-container">
+      <div class="inner-container">
+        <div class="flex-section">
+          <div class="flex-content">
+            <h2 class="flex-title">Discover Our Unique Approach</h2>
+            <p class="flex-text">
+              We combine cutting-edge technology with innovative strategies to
+              deliver outstanding results. Our team of experts is dedicated to
+              helping you achieve your goals and stay ahead in today's
+              competitive landscape.
+            </p>
+            <a href="#" class="flex-button">Learn More</a>
+          </div>
+          <div class="flex-image">
+            <div class="flex-image-placeholder">
+              <img src="./images/clooud.jpg" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex-section">
+          <div class="flex-image">
+            <div class="flex-image-placeholder">
+              <img src="./images/teamsuccess.jpg" alt="" srcset="" />
+            </div>
+          </div>
+          <div class="flex-content">
+            <h2 class="flex-title">
+              We offer the best services for our clients
+            </h2>
+            <p class="flex-text">
+              We combine cutting-edge technology with innovative strategies to
+              deliver outstanding results. Our team of experts is dedicated to
+              helping you achieve your goals and stay ahead in today's
+              competitive landscape.
+            </p>
+            <a href="#" class="flex-button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial-section">
+      <h2 class="testimonial-title">What Our Clients Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial-slide">
+            <p class="testimonial-text">
+              "exceeded our expectations at every step. Their attention to
+              detail and commitment to quality resulted in a beautiful,
+              functional website that our users love. We couldn’t be happier
+              with the outcome."
+            </p>
+            <p class="testimonial-author">Emily Davis</p>
+            <p class="testimonial-position">CEO, morris</p>
+          </div>
+          <div class="testimonial-slide">
+            <p class="testimonial-text">
+              "The team at moojo is incredibly talented and professional. They
+              took the time to understand our needs and delivered a stunning
+              product that has greatly enhanced our online presence."
+            </p>
+            <p class="testimonial-author">Jane Smith</p>
+            <p class="testimonial-position">Designer</p>
+          </div>
+          <div class="testimonial-slide">
+            <p class="testimonial-text">
+              "From start to finish, moojo was a pleasure to work with. Their
+              creativity and technical expertise made the entire process smooth
+              and enjoyable. Our new site looks amazing and functions
+              flawlessly."
+            </p>
+            <p class="testimonial-author">Mike Johnson</p>
+            <p class="testimonial-position">Manager, RWD</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </section>
+    <section class="video-section">
+      <h2 class="video-title">Product Tour</h2>
+      <div class="video-container">
+        <div class="video-wrapper">
+          <div class="video-placeholder" id="videoPlaceholder">
+            <div class="play-icon">▶</div>
+            <div class="play-text">Click to Play</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-heading">
+          <h2 class="contact-title">Get in Touch</h2>
+          <p class="contact-subtitle">
+            We'd love to hear from you. Fill out the form and we'll get back to
+            you as soon as possible.
+          </p>
+        </div>
+        <div class="contact-form">
+          <form id="customerForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <div class="footer-logo">Your Logo</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Contact Info</h3>
+          <ul class="footer-links">
+            <li>123 Main Street, City, Country</li>
+            <li>Phone: +1 234 567 890</li>
+            <li>Email: info@example.com</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">IN</a>
+            <a href="#" class="social-icon">LI</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

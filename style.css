@@ -600,9 +600,14 @@ nav {
     width: 100vw;
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 2rem 0;
+    border-radius: 0 0px 16px 16px;
+    margin-bottom: 2rem;
+    background-color: var(--brand-main);
   }
-
+  .logo {
+    color: white;
+  }
   .nav-wrapper {
     display: flex;
     flex-direction: column;
@@ -618,9 +623,13 @@ nav {
 
   .nav-links li {
     margin-right: 0;
+    color: white;
     margin-bottom: 0.5rem;
   }
 
+  .nav-links li a {
+    color: white;
+  }
   .contact-btn {
     margin-top: 1rem;
   }
@@ -655,10 +664,11 @@ nav {
   }
   .hero-text {
     max-width: 100%;
+    font-size: 14px;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     max-width: 100% !important
      ;
   }
@@ -712,9 +722,17 @@ nav {
   .flex-title {
     font-size: 2.2rem;
   }
+  .flex-text {
+    font-size: 14px;
+    margin-bottom: 48px;
+  }
 
   .flex-image-placeholder {
     height: auto;
+  }
+
+  .testimonial-section {
+    padding: 2rem 5%;
   }
   .video-title {
     font-size: 2rem;

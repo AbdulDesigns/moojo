@@ -680,12 +680,13 @@ nav {
   }
 
   .services-container {
-    padding: 0 1rem;
+    padding: 0;
   }
   .flex-container {
     min-width: 0px;
     padding: 1rem;
     height: auto;
+    overflow: hidden;
   }
   .flex-section {
     flex-direction: column;

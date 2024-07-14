@@ -138,7 +138,6 @@ nav {
   width: 100%;
   max-width: 500px;
   min-height: 400px; /* Added this line to ensure minimum height */
-  background-color: #d9f0ff01;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -598,10 +597,20 @@ nav {
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   nav {
+    width: 100vw;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 0;
   }
 
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .nav-content {
+    flex-direction: column;
+  }
   .nav-links {
     margin-top: 1rem;
     flex-direction: column;
@@ -614,7 +623,6 @@ nav {
 
   .contact-btn {
     margin-top: 1rem;
-    align-self: flex-start;
   }
 
   .hero {
@@ -622,22 +630,43 @@ nav {
     text-align: center;
     padding: 3rem 5%;
   }
-
-  .hero-content,
+  .hero-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
   .hero-image {
     max-width: 100%;
+    width: fit-content;
+    height: auto;
+  }
+  .hero-image-placeholder {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .hero-content {
+    width: 100%;
     margin-bottom: 2rem;
+  }
+  .hero-text {
+    max-width: 100%;
   }
 
   .hero-title {
     font-size: 2.5rem;
+    max-width: 100% !important
+     ;
   }
-
+  .hero-image {
+    overflow: hidden;
+  }
   .hero-image-placeholder {
-    min-height: 300px; /* Adjusted for mobile view */
+    width: 100%;
+    object-fit: contain;
   }
 
   .service-card {
@@ -653,20 +682,27 @@ nav {
   .services-container {
     padding: 0 1rem;
   }
+  .flex-container {
+    min-width: 0px;
+    padding: 1rem;
+    height: auto;
+  }
   .flex-section {
     flex-direction: column;
     text-align: center;
-    padding: 3rem 5%;
+    padding: 1rem 5%;
+    margin-bottom: 1rem;
   }
 
   .flex-content,
   .flex-image {
     max-width: 100%;
-    padding-right: 0;
+    padding: 0;
   }
 
   .flex-content {
     margin-bottom: 2rem;
+    padding: 0 1rem;
   }
 
   .flex-title {
@@ -674,7 +710,7 @@ nav {
   }
 
   .flex-image-placeholder {
-    height: 200px;
+    height: auto;
   }
   .video-title {
     font-size: 2rem;
@@ -695,16 +731,31 @@ nav {
     text-align: center;
     padding-right: 0;
     margin-bottom: 2rem;
+    width: 80%;
   }
 
   .contact-form {
     width: 100%;
   }
+
+  .submit-btn {
+    width: 100%;
+  }
   .footer-container {
+    text-align: center;
     flex-direction: column;
   }
 
   .footer-section {
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 2rem;
+  }
+  .footer-section p {
+    max-width: 100% !important;
+  }
+  .social-icons {
+    justify-content: center;
   }
 }

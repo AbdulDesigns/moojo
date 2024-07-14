@@ -87,10 +87,9 @@ const videoPlaceholder = document.getElementById("videoPlaceholder");
 videoPlaceholder.addEventListener("click", () => {
   // Replace this with your actual video embed code
   const videoEmbed =
-    '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+    '<iframe width="100%" height="625" src="https://www.youtube.com/embed/dhxrHvgXpSM" title="Claude 3.5 Sonnet for vision" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
   videoPlaceholder.innerHTML = videoEmbed;
 });
-
 document
   .getElementById("customerForm")
   .addEventListener("submit", function (e) {
@@ -101,4 +100,4 @@ document
     // const formData = new FormData(this);
     // console.log(formData.get('name'), formData.get('email'), etc.);
   });
-w
+w;

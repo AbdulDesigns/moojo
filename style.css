@@ -623,6 +623,7 @@ nav {
   }
 
   .nav-links li {
+    text-align: center;
     margin-right: 0;
     color: white;
     margin-bottom: 0.5rem;
